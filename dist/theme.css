@@ -1,0 +1,59 @@
+:root{
+  --paper:#d8dde3;
+  --ink:#4b1f2a;
+  --line:rgba(75,31,42,.28);
+  --muted:rgba(75,31,42,.7);
+}
+
+body,
+button{
+  font-family:Charter,"Bitstream Charter","Iowan Old Style","American Typewriter",Georgia,serif;
+}
+
+body,
+.home-page .home-header,
+.skip,
+dialog,
+dialog::backdrop{
+  background:var(--paper);
+  color:var(--ink);
+}
+
+.title-dot,
+.home-page{
+  --accent:var(--ink);
+}
+
+.index-row.active:hover{
+  background:rgba(75,31,42,.07);
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible{
+  outline-color:var(--ink);
+}
+
+.viewer-toolbar button,
+.viewer-nav button{
+  border-color:rgba(75,31,42,.35);
+  background:transparent;
+}
+
+.name,
+.hero-statement h1,
+.index-title,
+.practice-statement h2,
+.bio-strip h2,
+.intro h1,
+.work h2{
+  letter-spacing:-.035em;
+}
+
+.name small,
+.eyebrow,
+.section-kicker>span,
+.number,
+.intro-top{
+  letter-spacing:.11em;
+}
