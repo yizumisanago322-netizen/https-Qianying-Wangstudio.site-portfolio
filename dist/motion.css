@@ -67,3 +67,24 @@ html{scroll-snap-type:none;scroll-padding-top:0}
 .work>.grid video{max-height:calc((100svh - 10rem)/2);object-fit:contain}
 .more .grid img{height:auto;max-height:30svh;aspect-ratio:auto;object-fit:contain}
 @media(max-width:700px){.work>.grid{max-height:none}.work>.grid>figure img{max-height:35svh}.work>.grid:has(>figure:nth-of-type(7)) img{max-height:25svh}.home-chapter .chapter-heading h2,.home-chapter.compact-chapter .chapter-heading h2{font-size:clamp(2rem,8vw,2.7rem)}}
+
+/* Homepage paragraphs and list entries use a restrained, consistent scale. */
+.home-page .lead{font-size:.875rem}
+.home-page nav{font-size:.75rem}
+.home-page .index-title{font-size:clamp(1.2rem,1.85vw,2.4rem)}
+.home-page .index-note{font-size:.75rem}
+.home-page .chapter-list li{font-size:clamp(1.05rem,1.55vw,1.7rem)}
+.home-page .article-index strong{font-size:clamp(1rem,1.4vw,1.45rem)}
+.home-page .article-index small{font-size:.8rem}
+.home-page .two-column-list h3{font-size:clamp(1.3rem,2vw,2.4rem)}
+.home-page .bio-strip>p:last-child{font-size:.8rem}
+.home-page .statement-copy p{font-size:clamp(1.1rem,1.8vw,1.9rem)}
+.home-page .section-kicker h2,.home-page .chapter-heading>a,.home-page footer{font-size:.8rem}
+
+.academic-project-list{margin-left:18%;border-top:1px solid var(--line)}
+.academic-project-list article{padding:1.5rem 0 2rem;border-bottom:1px solid var(--line);scroll-margin-top:1rem}
+.academic-project-list span{font-size:.75rem;letter-spacing:.06em}
+.academic-project-list h3{font-size:clamp(1.35rem,2vw,2.4rem);font-weight:400;line-height:1.2;max-width:35ch;margin:.75rem 0}
+.academic-project-list a{font-size:.8rem;text-decoration:underline;text-underline-offset:4px}
+.academic-image{max-width:70%;margin:3rem 0 0 auto}
+@media(max-width:900px){.academic-project-list{margin-left:0}.academic-image{max-width:100%}}
