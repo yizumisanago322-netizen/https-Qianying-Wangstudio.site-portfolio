@@ -1,0 +1,55 @@
+/* A linked catalogue, preserving the Canva image compositions on detail pages. */
+.portfolio-index main,.artwork-detail main,.research-index main{padding:0 clamp(1rem,4vw,4rem)}
+.catalogue-lead,.research-hero{padding:clamp(4rem,10vh,8rem) 0 3rem;border-bottom:1px solid var(--line)}
+.catalogue-lead>p:first-child,.research-hero>p:first-child,.detail-intro>p{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}
+.catalogue-lead h1,.research-hero h1{font-size:clamp(3.5rem,8vw,8rem);font-weight:400;line-height:.95;margin:1rem 0 2.5rem}
+.catalogue-lead>p:last-child,.research-hero>p:last-child{font-size:.9rem;max-width:35rem;line-height:1.6}
+.catalogue-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:clamp(1rem,3vw,3rem);padding:3rem 0 8rem;align-items:start}
+.catalogue-card{grid-column:span 4;color:inherit;text-decoration:none;min-width:0;display:block}
+.catalogue-card:nth-child(5n+2){grid-column:span 5;margin-top:8vw}
+.catalogue-card:nth-child(5n+3){grid-column:span 3;margin-top:3vw}
+.catalogue-card:nth-child(5n+4){grid-column:span 6}
+.catalogue-card:nth-child(5n){grid-column:span 6;margin-top:4vw}
+.catalogue-media{height:clamp(13rem,27vw,28rem);background:#dce2e8;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.catalogue-card:nth-child(5n+3) .catalogue-media{height:clamp(16rem,32vw,33rem)}
+.catalogue-media>img{width:100%;height:100%;object-fit:contain;transition:transform .45s ease}
+.catalogue-card:hover .catalogue-media>img{transform:scale(1.035)}
+.card-love .catalogue-media,.card-dream .catalogue-media{background:#e3e5e4}
+.card-laboratoires .catalogue-media{background:#e7e9e8}
+.card-laboratoires .catalogue-media img{height:auto}
+.catalogue-triptych{display:flex;gap:.5rem;width:94%;height:75%;align-items:center}
+.catalogue-triptych video{width:calc((100% - 1rem)/3);height:100%;object-fit:cover}
+.catalogue-caption{display:grid;grid-template-columns:1fr auto;padding:.85rem 0;border-top:1px solid var(--line);margin-top:.7rem;gap:.35rem}
+.catalogue-caption>span:first-child{font-size:.7rem;color:var(--muted);grid-column:1/-1;text-transform:uppercase;letter-spacing:.05em}
+.catalogue-caption h2{font-size:clamp(1.2rem,1.8vw,1.8rem);font-weight:400;margin:0;line-height:1.2}
+.catalogue-arrow{font-size:1.4rem}
+.detail-back{display:inline-block;margin:3rem 0 1.5rem;font-size:.8rem;text-decoration:underline;text-underline-offset:4px}
+.detail-intro{border-top:1px solid var(--line);padding:1.25rem 0 2rem}
+.detail-intro h1{font-size:clamp(2.7rem,6vw,6rem);line-height:1.02;font-weight:400;margin:1.5rem 0 0}
+.detail-gallery .canva-work{min-height:0;padding:2rem 0 3rem}
+.detail-gallery .canva-work-heading{font-size:.8rem}
+.detail-gallery .canva-stage{width:min(100%,calc(129.41176svh - 11.647rem));}
+.detail-gallery .canva-thumb img.love-cropped{object-fit:cover;object-position:left center}
+.detail-gallery #love-continued .canva-thumb img.love-cropped{object-position:right center}
+.detail-gallery .canva-thumb .image-button{overflow:hidden}
+.lab-original{margin:1rem auto 4rem;max-width:1100px}
+.lab-original img{width:100%;height:auto;display:block}
+.lab-original figcaption{font-size:.7rem;padding:.5rem 0;color:var(--muted)}
+.artwork-information{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:3rem 0 6rem;display:grid;grid-template-columns:1.4fr 1fr;gap:10vw}
+.artwork-information h2{font-size:clamp(1.7rem,2.5vw,2.6rem);font-weight:400}
+.placeholder-copy{font-size:.9rem;line-height:1.7}
+.artwork-information dl{margin:0}.artwork-information dl div{display:grid;grid-template-columns:1fr 1.4fr;border-bottom:1px solid var(--line);padding:1rem 0;gap:1rem;font-size:.8rem}
+.artwork-information dt{color:var(--muted)}.artwork-information dd{margin:0}
+.bottom-back{margin:3rem 0 4rem}
+.detail-cv{text-align:center;border-top:1px solid var(--line);padding:7rem max(1rem,12%) 9rem;margin-top:1rem}
+.detail-cv h2{font-size:clamp(1.1rem,1.7vw,1.65rem);font-weight:400;line-height:1.4;margin:2rem auto;max-width:45rem}
+.detail-cv>p:not(.eyebrow){font-size:.72rem;line-height:1.7;margin:auto;max-width:38rem}
+.detail-cv a{display:inline-block;font-size:.72rem;margin-top:2rem;text-decoration:underline;text-underline-offset:4px}
+.audio-note{font-size:.8rem;margin:.5rem 0 2rem}.audio-note button{font:inherit;border:1px solid currentColor;background:transparent;color:inherit;padding:.5rem .7rem;cursor:pointer;margin-left:.5rem}
+.research-letters{display:flex;gap:clamp(2rem,8vw,8rem);border-bottom:1px solid var(--line);padding:1rem 0;font-size:clamp(2rem,4vw,4rem)}
+.research-letters a{text-decoration:none;color:inherit}.research-groups{max-width:1000px;margin:3rem 0 9rem auto}
+.research-group{scroll-margin-top:6rem;display:grid;grid-template-columns:15% 1fr;border-top:1px solid var(--line);padding:1.5rem 0 3rem}
+.research-group>h2{font-size:clamp(2rem,4vw,4rem);font-weight:400;margin:0}
+.research-entry{grid-column:2;display:grid;grid-template-columns:18% 1fr auto;gap:1rem;color:inherit;text-decoration:none;border-bottom:1px solid var(--line);padding:1rem 0 2rem;margin-bottom:1.5rem}
+.research-entry>span{font-size:.7rem;color:var(--muted)}.research-entry h3{font-size:clamp(1.35rem,2.3vw,2.5rem);font-weight:400;line-height:1.2;margin:0}.research-entry p{font-size:.8rem}.research-entry b{font-size:1.3rem;font-weight:400}
+@media(max-width:750px){.catalogue-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 1rem}.catalogue-card,.catalogue-card:nth-child(n){grid-column:span 1;margin-top:0}.catalogue-card:nth-child(3n){grid-column:span 2}.catalogue-media,.catalogue-card:nth-child(5n+3) .catalogue-media{height:45vw}.catalogue-card:nth-child(3n) .catalogue-media{height:65vw}.artwork-information{grid-template-columns:1fr;gap:2rem}.detail-gallery .canva-stage{width:100%}.research-group{grid-template-columns:3rem 1fr}.research-entry{grid-template-columns:1fr auto}.research-entry>span{grid-column:1/-1}}
