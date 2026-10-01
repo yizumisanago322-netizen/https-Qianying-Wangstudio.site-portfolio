@@ -4,7 +4,21 @@ html{scroll-snap-type:y proximity}
 .split-hero .hero-statement h1{font-size:clamp(2.8rem,5vw,5.8rem);max-width:15ch}
 .split-hero .placed-image-one{grid-column:2;width:100%;margin:0;align-self:end;padding-bottom:5vh}
 .home-main>section:not(.split-hero){position:relative;z-index:1;background:var(--paper);scroll-snap-align:start;min-height:85svh;padding-top:4rem}
-.home-main>.practice-index{min-height:100svh}
+.home-main>.practice-index{min-height:100svh;background:#aab8c8}
+.practice-index .index-title{font-size:clamp(1.35rem,2.1vw,2.8rem);line-height:1.12}
+.practice-index .index-row{padding:1.4rem 0}
+.practice-index .index-note,.practice-index .index-no{color:var(--ink)}
+.article-index{margin-left:18%;border-top:1px solid var(--line)}
+.article-index a{display:grid;grid-template-columns:3rem minmax(0,1fr);gap:.4rem 1.5rem;padding:1.5rem 0;border-bottom:1px solid var(--line);align-items:baseline}
+.article-index a:hover,.article-index a:focus-visible{background:rgba(75,31,42,.07)}
+.article-index span{font-size:.85rem}.article-index strong{font-size:clamp(1.25rem,2vw,2rem);font-weight:400;line-height:1.24}.article-index small{grid-column:2;font-size:.9rem}
+.article-page main{max-width:1000px;margin:0 auto;padding:10vh 4vw 20vh;min-height:75vh}
+.article-page .article-back{font-size:.9rem;text-decoration:underline;text-underline-offset:4px}
+.article-page h1{font-size:clamp(2.4rem,5vw,5.3rem);font-weight:400;line-height:1.08;margin:5rem 0 2rem}
+.article-page .article-subtitle{font-size:clamp(1.25rem,2vw,2rem);margin:0 0 4rem}
+.article-page .article-status{border-top:1px solid var(--line);padding-top:1.5rem;font-size:1rem}
+@media(max-width:900px){.article-index{margin-left:0}}
+@media(max-width:540px){.practice-index .index-title{font-size:clamp(1.3rem,5.5vw,1.85rem)}.article-index a{grid-template-columns:2rem minmax(0,1fr);gap:1rem}.article-page main{padding:5rem 5vw}}
 .home-main>.compact-chapter{min-height:60svh}
 .work{scroll-snap-align:start;min-height:100svh;padding-top:5vh;margin-bottom:12vh;border-top:2px solid var(--ink)}
 .series-label{font-size:.9rem;letter-spacing:.08em;margin:0 0 2rem;grid-column:2}
