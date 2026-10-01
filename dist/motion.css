@@ -1,10 +1,10 @@
-html{scroll-snap-type:y proximity}
+html{scroll-snap-type:none;scroll-padding-top:0}
 .home-page .split-hero{position:relative;isolation:isolate;min-height:calc(100svh - 110px);grid-template-columns:1fr 1fr;align-items:center;padding:5vh 4vw;overflow:hidden;scroll-snap-align:start}
 .split-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:url("assets/home-background.png") center/cover no-repeat;opacity:.18;pointer-events:none}
 .split-hero .hero-statement h1{font-size:clamp(2.8rem,5vw,5.8rem);max-width:15ch}
 .split-hero .placed-image-one{grid-column:2;width:100%;margin:0;align-self:end;padding-bottom:5vh}
 .home-main>section:not(.split-hero){position:relative;z-index:1;background:var(--paper);scroll-snap-align:start;min-height:85svh;padding-top:4rem}
-.home-main>section.practice-index{min-height:100svh;background:#aab8c8}
+.home-main>section.practice-index{min-height:100svh;background:var(--paper)}
 .practice-index .index-title{font-size:clamp(1.35rem,2.1vw,2.8rem);line-height:1.12}
 .practice-index .index-row{padding:1.4rem 0}
 .practice-index .index-note,.practice-index .index-no{color:var(--ink)}
@@ -35,3 +35,35 @@ html{scroll-snap-type:y proximity}
 .slide-panel.awaiting-entry{opacity:0;transform:translateY(100px)}
 @media(max-width:700px){.home-page .split-hero{grid-template-columns:1fr;gap:2rem;min-height:calc(100svh - 150px)}.split-hero .placed-image-one{grid-column:1;padding-bottom:1rem;width:100%}.split-hero .hero-statement h1{font-size:clamp(2.5rem,9vw,4rem)}.split-hero .lead{margin-top:1.5rem}.outcome{padding:3rem 4vw}.outcome .process{grid-template-columns:1fr}.outcome .process img{height:auto;max-height:45svh}.series-label{grid-column:2}.slide-panel.awaiting-entry{transform:translateY(55px)}}
 @media(prefers-reduced-motion:reduce){html{scroll-snap-type:none;scroll-behavior:auto}.slide-panel,.slide-panel.awaiting-entry{opacity:1;transform:none;transition:none}.split-hero{transform:none!important;opacity:1!important}}
+
+/* The top navigation is the darker band; page backgrounds remain consistent. */
+.home-page .home-header,body:not(.home-page)>header{background:#aab8c8}
+.home-main>.split-hero{scroll-snap-align:none}
+.home-main>section:not(.split-hero),.work,.outcome{scroll-snap-align:none}
+#cv,#artworks,#exhibitions,#article,#academic-project,#degree-project{scroll-margin-top:0}
+
+/* Chapter typography shares a smaller scale with its linked pages. */
+.home-chapter .chapter-heading h2{font-size:clamp(2rem,4.1vw,4.8rem)}
+.home-chapter.compact-chapter .chapter-heading h2{font-size:clamp(2rem,3.7vw,4.3rem)}
+.chapter-list li{font-size:clamp(1.2rem,1.8vw,2rem)}
+.two-column-list h3{font-size:clamp(1.45rem,2.3vw,2.8rem)}
+.single-entry h3,.degree-title-block h3{font-size:clamp(1.7rem,3.2vw,3.9rem)}
+.article-index strong{font-size:clamp(1.1rem,1.65vw,1.65rem)}
+.article-page h1{font-size:clamp(2rem,3.7vw,4rem)}
+.article-page .article-subtitle{font-size:clamp(1.1rem,1.65vw,1.6rem)}
+.intro h1{font-size:clamp(3.5rem,8vw,8rem)}
+.work h2{font-size:clamp(1.45rem,2.2vw,2.25rem)}
+.outcome h3{font-size:clamp(1.5rem,3vw,3rem)}
+.panel-number{font-size:clamp(3rem,6vw,6rem)}
+
+/* Complete thumbnails stay inside the viewport before opening the viewer. */
+.work>.grid,.work>.studies,.work>.pair,.work>.single{max-width:100%;min-width:0}
+.work>.grid{grid-auto-rows:minmax(0,1fr);max-height:calc(100svh - 9rem);gap:clamp(.5rem,1.3vh,1rem)}
+.work>.grid>figure{min-height:0;display:flex;align-items:center;justify-content:center}
+.work>.grid>figure .image-button{height:100%;display:flex;align-items:center;justify-content:center}
+.work>.grid>figure img{width:100%;height:100%;max-height:calc((100svh - 10rem)/2);object-fit:contain;aspect-ratio:auto}
+.work>.grid:has(>figure:nth-of-type(7)) img{max-height:calc((100svh - 11rem)/3)}
+.work>.pair img,.work>.single img,.work>.studies img{width:100%;height:auto;max-height:calc(100svh - 10rem);object-fit:contain}
+.work>.grid video{max-height:calc((100svh - 10rem)/2);object-fit:contain}
+.more .grid img{height:auto;max-height:30svh;aspect-ratio:auto;object-fit:contain}
+@media(max-width:700px){.work>.grid{max-height:none}.work>.grid>figure img{max-height:35svh}.work>.grid:has(>figure:nth-of-type(7)) img{max-height:25svh}.home-chapter .chapter-heading h2,.home-chapter.compact-chapter .chapter-heading h2{font-size:clamp(2rem,8vw,2.7rem)}}
