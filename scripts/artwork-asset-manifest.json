@@ -1,0 +1,276 @@
+{
+  "white": {
+    "MAGnHcAwadA.jpg": {
+      "output": "MAGnHcAwadA-white.png",
+      "size": [
+        1599,
+        1562
+      ],
+      "changed_percent": 35.43,
+      "pure_white_percent": 32.37,
+      "protected_pixels_identical": true
+    },
+    "MAGnHe8sdgg.jpg": {
+      "output": "MAGnHe8sdgg-white.png",
+      "size": [
+        1593,
+        1600
+      ],
+      "changed_percent": 53.69,
+      "pure_white_percent": 50.21,
+      "protected_pixels_identical": true
+    },
+    "MAGnHQzxVMk.jpg": {
+      "output": "MAGnHQzxVMk-white.png",
+      "size": [
+        1570,
+        1600
+      ],
+      "changed_percent": 48.72,
+      "pure_white_percent": 46.12,
+      "protected_pixels_identical": true
+    },
+    "MAGnHYx-eYM.jpg": {
+      "output": "MAGnHYx-eYM-white.png",
+      "size": [
+        1600,
+        1590
+      ],
+      "changed_percent": 39.58,
+      "pure_white_percent": 33.53,
+      "protected_pixels_identical": true
+    },
+    "MAGnHZ8oR18.jpg": {
+      "output": "MAGnHZ8oR18-white.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "changed_percent": 37.83,
+      "pure_white_percent": 35.07,
+      "protected_pixels_identical": true
+    },
+    "MAGnHfpXACI.jpg": {
+      "output": "MAGnHfpXACI-white.png",
+      "size": [
+        1600,
+        1598
+      ],
+      "changed_percent": 45.57,
+      "pure_white_percent": 42.93,
+      "protected_pixels_identical": true
+    },
+    "MAGnHeXFNeY.jpg": {
+      "output": "MAGnHeXFNeY-white.png",
+      "size": [
+        1599,
+        1583
+      ],
+      "changed_percent": 40.03,
+      "pure_white_percent": 36.76,
+      "protected_pixels_identical": true
+    },
+    "MAGnHeyr8Ms.jpg": {
+      "output": "MAGnHeyr8Ms-white.png",
+      "size": [
+        1599,
+        1566
+      ],
+      "changed_percent": 63.02,
+      "pure_white_percent": 54.34,
+      "protected_pixels_identical": true
+    },
+    "MAGnHY-KyZI.jpg": {
+      "output": "MAGnHY-KyZI-white.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "changed_percent": 40.25,
+      "pure_white_percent": 37.59,
+      "protected_pixels_identical": true
+    },
+    "MAGnHQ9rGIk.jpg": {
+      "output": "MAGnHQ9rGIk-white.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "changed_percent": 53.6,
+      "pure_white_percent": 51.32,
+      "protected_pixels_identical": true
+    },
+    "MAGnH3tX5jA.jpg": {
+      "output": "MAGnH3tX5jA-white.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "changed_percent": 46.52,
+      "pure_white_percent": 38.32,
+      "protected_pixels_identical": true
+    },
+    "MAGnH34Bqvc.jpg": {
+      "output": "MAGnH34Bqvc-white.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "changed_percent": 39.22,
+      "pure_white_percent": 33.16,
+      "protected_pixels_identical": true
+    },
+    "MAGnHyKm3Xc.jpg": {
+      "output": "MAGnHyKm3Xc-white.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "changed_percent": 44.24,
+      "pure_white_percent": 39.3,
+      "protected_pixels_identical": true
+    },
+    "MAGnHwn2bhs.jpg": {
+      "output": "MAGnHwn2bhs-white.png",
+      "size": [
+        1599,
+        1560
+      ],
+      "changed_percent": 39.56,
+      "pure_white_percent": 35.32,
+      "protected_pixels_identical": true
+    },
+    "MAGnH376S48.jpg": {
+      "output": "MAGnH376S48-white.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "changed_percent": 37.79,
+      "pure_white_percent": 32.94,
+      "protected_pixels_identical": true
+    },
+    "MAGnH5qk3ho.jpg": {
+      "output": "MAGnH5qk3ho-white.png",
+      "size": [
+        1598,
+        1599
+      ],
+      "changed_percent": 39.47,
+      "pure_white_percent": 32.31,
+      "protected_pixels_identical": true
+    },
+    "MAGnH_Kg_30.jpg": {
+      "output": "MAGnH_Kg_30-white.png",
+      "size": [
+        1598,
+        1599
+      ],
+      "changed_percent": 39.66,
+      "pure_white_percent": 31.65,
+      "protected_pixels_identical": true
+    },
+    "MAGnH8oKk78.jpg": {
+      "output": "MAGnH8oKk78-white.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "changed_percent": 32.85,
+      "pure_white_percent": 27.08,
+      "protected_pixels_identical": true
+    },
+    "MAGnH6fhdmY.jpg": {
+      "output": "MAGnH6fhdmY-white.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "changed_percent": 36.07,
+      "pure_white_percent": 31.69,
+      "protected_pixels_identical": true
+    },
+    "MAGnHwsn_Aw.jpg": {
+      "output": "MAGnHwsn_Aw-white.png",
+      "size": [
+        1599,
+        1600
+      ],
+      "changed_percent": 32.27,
+      "pure_white_percent": 29.09,
+      "protected_pixels_identical": true
+    },
+    "MAGnHwv2uys.jpg": {
+      "output": "MAGnHwv2uys-white.png",
+      "size": [
+        1599,
+        1595
+      ],
+      "changed_percent": 18.71,
+      "pure_white_percent": 19.17,
+      "protected_pixels_identical": true
+    }
+  },
+  "grade": {
+    "MAGnaL6KQ5k.png": {
+      "output": "MAGnaL6KQ5k-graded.png",
+      "size": [
+        948,
+        2399
+      ],
+      "saturation": 1.16,
+      "pink_bias": 2.0,
+      "warmth_bias": -1.5,
+      "mean_lightness_difference": 0.0587,
+      "clipped_channel_fraction": 0.05324
+    },
+    "MAGnaM_BZxQ.png": {
+      "output": "MAGnaM_BZxQ-graded.png",
+      "size": [
+        931,
+        2398
+      ],
+      "saturation": 1.12,
+      "pink_bias": 2.0,
+      "warmth_bias": -1.0,
+      "mean_lightness_difference": 0.062,
+      "clipped_channel_fraction": 0.03732
+    },
+    "MAGoGIf9-UE.png": {
+      "output": "MAGoGIf9-UE-graded.png",
+      "size": [
+        928,
+        2399
+      ],
+      "saturation": 1.1,
+      "pink_bias": 1.5,
+      "warmth_bias": -1.5,
+      "mean_lightness_difference": 0.0615,
+      "clipped_channel_fraction": 0.08368
+    },
+    "MAGp-ESWhcU.jpg": {
+      "output": "MAGp-ESWhcU-graded.png",
+      "size": [
+        1213,
+        2399
+      ],
+      "saturation": 1.12,
+      "pink_bias": 2.5,
+      "warmth_bias": 3.0,
+      "mean_lightness_difference": 0.0663,
+      "clipped_channel_fraction": 0.00158
+    },
+    "MAGp-FHUqzU.jpg": {
+      "output": "MAGp-FHUqzU-graded.png",
+      "size": [
+        1215,
+        2399
+      ],
+      "saturation": 1.1,
+      "pink_bias": 2.0,
+      "warmth_bias": 2.5,
+      "mean_lightness_difference": 0.0774,
+      "clipped_channel_fraction": 0.0004
+    }
+  }
+}

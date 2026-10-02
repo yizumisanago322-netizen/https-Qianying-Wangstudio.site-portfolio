@@ -10,12 +10,12 @@
 .catalogue-card:nth-child(5n+3){grid-column:span 3;margin-top:3vw}
 .catalogue-card:nth-child(5n+4){grid-column:span 6}
 .catalogue-card:nth-child(5n){grid-column:span 6;margin-top:4vw}
-.catalogue-media{height:clamp(13rem,27vw,28rem);background:#dce2e8;overflow:hidden;display:flex;align-items:center;justify-content:center}
+.catalogue-media{height:clamp(13rem,27vw,28rem);background:#FFFFFF;overflow:hidden;display:flex;align-items:center;justify-content:center}
 .catalogue-card:nth-child(5n+3) .catalogue-media{height:clamp(16rem,32vw,33rem)}
 .catalogue-media>img{width:100%;height:100%;object-fit:contain;transition:transform .45s ease}
 .catalogue-card:hover .catalogue-media>img{transform:scale(1.035)}
-.card-love .catalogue-media,.card-dream .catalogue-media{background:#e3e5e4}
-.card-laboratoires .catalogue-media{background:#e7e9e8}
+.card-love .catalogue-media,.card-dream .catalogue-media{background:#FFFFFF}
+.card-laboratoires .catalogue-media{background:#FFFFFF}
 .card-laboratoires .catalogue-media img{height:auto}
 .catalogue-triptych{display:flex;gap:.5rem;width:94%;height:75%;align-items:center}
 .catalogue-triptych video{width:calc((100% - 1rem)/3);height:100%;object-fit:cover}
@@ -64,19 +64,17 @@
 .catalogue-caption{grid-template-columns:1fr}.catalogue-arrow{display:none}
 .love-work{border-top:1px solid var(--line);padding:2rem 0 5rem}
 .love-work h2{font-size:clamp(1.3rem,2vw,2rem);font-weight:400;margin:0 0 2rem}
-.love-composition{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:clamp(.4rem,1.5vw,1.2rem);height:min(45svh,450px);max-width:760px;margin:0 auto;align-items:stretch}
-.love-composition>.image-button,.love-pair{display:block;width:100%;height:100%;min-width:0;overflow:hidden}
-.love-composition>.image-button img{width:100%;height:100%;object-fit:contain;display:block}
-.love-pair{display:grid;grid-template-columns:1fr 1fr;gap:0}
-.love-pair .image-button{height:100%;width:100%;overflow:hidden;display:block}
-.love-pair img{width:100%;height:100%;object-fit:cover;display:block}
-.love-pair .image-button:first-child img{object-position:left center}
-.love-pair .image-button:last-child img{object-position:right center}
-@media(max-width:750px){.catalogue-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 1rem}.catalogue-card:nth-child(n){grid-column:span 1}.catalogue-media,.catalogue-card:nth-child(5n+3) .catalogue-media{height:auto;aspect-ratio:4/3}.love-composition{height:min(50svh,420px);gap:.35rem}}
-@media(max-width:460px){.catalogue-grid{grid-template-columns:1fr}.love-composition{height:38svh}}
+/* Reference spread: panel 2 remains two separated halves. */
+.love-composition{display:grid;grid-template-columns:948fr 175fr 471.5fr 365fr 471.5fr 175fr 931fr 175fr 928fr;width:min(100%,87svh,760px);aspect-ratio:4639/2399;height:auto;max-width:760px;margin:0 auto;align-items:stretch;gap:0}
+.love-panel{display:block;min-width:0;width:100%;height:100%;overflow:hidden}
+.love-panel:nth-child(1){grid-column:1}.love-panel:nth-child(2){grid-column:3}.love-panel:nth-child(3){grid-column:5}.love-panel:nth-child(4){grid-column:7}.love-panel:nth-child(5){grid-column:9}
+.love-panel img{display:block;width:100%;height:100%;object-fit:contain}
+.love-half img{width:200%;max-width:none;height:100%;object-fit:fill}
+.love-half-right img{transform:translateX(-50%)}
+@media(max-width:750px){.catalogue-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:2rem 1rem}.catalogue-card:nth-child(n){grid-column:span 1}.catalogue-media,.catalogue-card:nth-child(5n+3) .catalogue-media{height:auto;aspect-ratio:4/3}}
+@media(max-width:460px){.catalogue-grid{grid-template-columns:1fr}}
 .catalogue-media .canva-stage{width:100%;height:100%;margin:0;aspect-ratio:1056/816}
 .catalogue-media .canva-thumb{pointer-events:none}
 .catalogue-media .canva-thumb img,.catalogue-media .canva-thumb video{object-fit:contain}
-.love-composition.love-preview{width:100%;height:100%;gap:.3rem;max-width:none}
-.love-preview>img{width:100%;height:100%;object-fit:contain;min-width:0}
-.love-preview .love-pair img{object-fit:cover}
+ .love-composition.love-preview{width:100%;height:auto;max-width:none;flex:none}
+#sea-to-sun .canva-thumb,#sea-to-sun .canva-thumb .image-button,#sea-to-sun .canva-thumb img{background-color:#FFFFFF}
