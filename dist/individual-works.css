@@ -1,0 +1,47 @@
+/* Shared, opt-in sequence. The original series overview remains independent. */
+.individual-works {
+  width: min(62vw, 920px);
+  max-width: 100%;
+  margin: 0 auto;
+  padding-block: clamp(4rem, 8vw, 7.5rem);
+}
+
+.individual-works > h2 {
+  margin: 0 0 clamp(2.5rem, 5vw, 4rem);
+  font-size: .9rem;
+  font-weight: 400;
+}
+
+.individual-works-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: clamp(36px, 5vw, 80px);
+  row-gap: clamp(64px, 8vw, 120px);
+  align-items: start;
+}
+
+.individual-work { margin: 0; min-width: 0; }
+.individual-work img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+.individual-work figcaption {
+  padding-top: .8rem;
+  text-align: left;
+  color: inherit;
+  line-height: 1.5;
+}
+.individual-work-title { display: block; font-size: .8rem; }
+.individual-work-meta { display: block; font-size: .7rem; color: var(--muted); }
+
+@media (min-width: 701px) and (max-width: 1024px) {
+  .individual-works { width: min(76vw, 920px); }
+  .individual-works-grid { column-gap: 36px; }
+}
+@media (max-width: 700px) {
+  .individual-works { width: min(78vw, 360px); }
+  .individual-works-grid { grid-template-columns: 1fr; row-gap: 64px; }
+}
