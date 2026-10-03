@@ -1,0 +1,23 @@
+/* Shared publication component; existing page colours and type remain inherited. */
+.editorial-page { --editorial-darkness-max: .4; }
+.editorial-content { line-height: 1.75; overflow-wrap: anywhere; }
+.editorial-content p,.editorial-content ul,.editorial-content ol,.editorial-content blockquote { max-width: 68ch; margin: 1.5em auto; }
+.editorial-content h2 { font-size: 1.35em; font-weight: 400; line-height: 1.35; max-width: 50ch; margin: 3em auto 1.2em; }
+.editorial-content figure { margin: 4rem auto; max-width: 100%; }
+.editorial-content figure img { display:block; width:auto; height:auto; max-width:100%; max-height:85svh; object-fit:contain; margin:auto; }
+.editorial-content figcaption { max-width:68ch; margin:1rem auto; line-height:1.6; }
+.editorial-content a,.editorial-download a { text-decoration:underline; text-underline-offset:.2em; }
+.editorial-content blockquote { border-left:1px solid var(--line); padding-left:1rem; font-size:.875em; }
+.editorial-content table { width:100%; table-layout:fixed; border-collapse:collapse; }
+.editorial-content td,.editorial-content th { padding:.6rem; vertical-align:top; overflow-wrap:anywhere; }
+.editorial-visual { padding-block:12svh; }
+.editorial-image { position:relative; isolation:isolate; }
+.editorial-overlay { position:absolute; inset:0; background:#000; opacity:var(--editorial-opacity,0); pointer-events:none; }
+.editorial-interlude { min-height:100svh; display:flex; align-items:center; padding-block:4rem; }
+.editorial-interlude p { width:100%; }
+.editorial-download { margin:5rem 0; font-size:.9rem; }
+.source-note { font-size:.875em; }
+.editorial-page .detail-cv{max-width:820px;margin:8rem auto 0;text-align:center;padding-top:3rem;border-top:1px solid var(--line)}
+.editorial-page .detail-cv h2{font-size:1rem;line-height:1.6;font-weight:400}.editorial-page .detail-cv p,.editorial-page .detail-cv a{font-size:.85rem;line-height:1.7}
+@media(max-width:767px){.editorial-interlude{min-height:0;padding-block:3rem}.editorial-visual{padding-block:2rem}.editorial-overlay{display:none}.editorial-content figure{margin-block:2.5rem}.editorial-content{line-height:1.7}}
+@media(prefers-reduced-motion:reduce){.editorial-overlay{display:none}}

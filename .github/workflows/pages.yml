@@ -23,6 +23,11 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+      - name: Assemble original Blue Hour PDF
+        run: |
+          mkdir -p dist/assets/documents/blue-hour
+          cat publication-sources/blue-hour/blue-hour.pdf.part1 publication-sources/blue-hour/blue-hour.pdf.part2 > dist/assets/documents/blue-hour/blue-hour.pdf
+          echo '03ab62b667daaaf867b3af5f1d9aea34c202e0f8903148f9abee309518dd152f  dist/assets/documents/blue-hour/blue-hour.pdf' | sha256sum --check
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload website
